@@ -118,13 +118,14 @@ img {
   padding-bottom: 24px;
   font-weight: 500;
   position: relative;
+  color: #404bbf;
 }
 .studio-item:hover,
 .studio-item:focus {
   color: #404bbf;
 }
 .studio-item::after {
-  content: ;
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -190,7 +191,7 @@ img {
   margin: 0 auto;
   margin-top: 48px;
   display: block;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -368,6 +369,9 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.active:hover {
+  transform: translateY(0%);
+}
 
 .title-portfolio {
   margin-bottom: 72px;
@@ -397,7 +401,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-li:hover {
-  transform: translateY(0%);
 }
 
 .portfolio-img {
@@ -430,7 +433,7 @@ img {
 }
 .footer-contagner {
   margin-right: 120px;
-  margin-left: 120px;
+  margin-left: 156px;
 }
 .webstudio {
   justify-content: center;
@@ -476,6 +479,7 @@ img {
 .social-svg-li {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-link-svg-footer {
   width: 100%;
@@ -487,7 +491,6 @@ img {
   justify-content: center;
 }
 .team-icon-svg {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-link-svg-footer:hover {
   background-color: #31d0aa;
